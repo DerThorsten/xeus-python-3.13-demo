@@ -6,3 +6,5 @@ dependencies:
   - python=3.13
   - xeus-python
   - numpy
+  - matplotlib
+  - ipycanvas
