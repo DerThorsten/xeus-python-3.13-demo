@@ -29,7 +29,7 @@ jobs:
 
       - name: Create the wasm environment
         run: |
-          micromamba create -f environment.yml --platform=emscripten-wasm32  --yes
+          micromamba create -f environment.yml --platform=emscripten-wasm32  --yes \
           --prefix=wasm_env_prefix
 
       - name: Build the JupyterLite site
