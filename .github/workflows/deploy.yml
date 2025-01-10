@@ -30,13 +30,15 @@ jobs:
       - name: Create the wasm environment
         run: |
           micromamba create -f environment.yml --platform=emscripten-wasm32  --yes
+          --prefix=wasm_env_prefix
 
       - name: Build the JupyterLite site
         shell: bash -l {0}
         run: |
           cp README.md content
-          jupyter lite build --contents content --output-dir dist \
-              --XeusAddon.prefix=$$MAMBA_ROOT_PREFIX/envs/xeus-python-kernel
+          jupyter lite build \
+              --XeusAddon.prefix=$(pwd)/wasm_env_prefix \
+               --contents content --output-dir dist \
 
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
