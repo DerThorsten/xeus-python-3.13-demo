@@ -7,4 +7,4 @@ dependencies:
   - jupyter_server
   - jupyterlite-xeus>=2.0.0
   - pip:
-   - jupyterlite-core >=0.5.1
+    - jupyterlite-core>=0.5.1
