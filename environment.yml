@@ -7,3 +7,4 @@ dependencies:
   - xeus-python
   - numpy
   - qutip
+  - matplotlib
