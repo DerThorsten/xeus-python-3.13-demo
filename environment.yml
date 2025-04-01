@@ -5,6 +5,14 @@ channels:
 dependencies:
   - python=3.13
   - xeus-python
-  - numpy
-  - qutip
+  - ipycanvas
+  - ipywidgets
   - matplotlib
+  - plotly
+  - pandas
+  - nbformat
+  - numpy
+  - anywidget
+  - scipy
+  - sympy
+  - qutip
