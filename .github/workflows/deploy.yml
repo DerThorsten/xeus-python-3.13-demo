@@ -27,10 +27,6 @@ jobs:
           environment-file: build-environment.yml
           cache-environment: false
 
-      - name: Create the wasm environment
-        run: |
-          micromamba create -f environment.yml --platform=emscripten-wasm32  --yes 
-
       - name: Build the JupyterLite site
         shell: bash -l {0}
         run: |
