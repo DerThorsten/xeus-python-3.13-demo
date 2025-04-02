@@ -17,5 +17,5 @@ dependencies:
   - sympy
   - qutip
   - pip:
-    - qutip_qtrl
-    - qutip_qip
+      - qutip-qip
+      - qutip-qtrl
