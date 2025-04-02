@@ -9,3 +9,5 @@ dependencies:
   - pip:
     - jupyterlite-core>=0.5.1
     - jupyterlite-xeus>=3.1.6
+    - qutip_qtrl
+    - qutip_qip
