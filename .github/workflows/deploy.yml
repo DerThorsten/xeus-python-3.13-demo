@@ -36,7 +36,7 @@ jobs:
         run: |
           cp README.md content
           jupyter lite build \
-              --XeusAddon.prefix=/home/runner/micromamba/envs/xeus-python-kernel \
+              --XeusAddon.environment_file=environment.yaml \
                --contents content --output-dir dist \
 
       - name: Upload artifact
