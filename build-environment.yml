@@ -5,6 +5,7 @@ dependencies:
   - python
   - pip
   - jupyter_server
+  - empack >= 5.0.8
   - pip:
     - jupyterlite-core>=0.5.1
     - jupyterlite-xeus>=3.1.6
